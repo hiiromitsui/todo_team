@@ -1,6 +1,6 @@
 <?php
 
-// require_once('Models/Task.php');
+//  require_once('Models/Task.php');
 // require_once('function.php');
 
 // session_start();
@@ -81,8 +81,8 @@
             </div>
         </div>
 
-        <!-- <div class="row p-3">
-            <?php foreach ($tasks as $task) : ?>
+        <div class="row p-3">
+            <!-- <?php foreach ($tasks as $task) : ?>  -->
                 <div class="col-sm-6 col-md-4 col-lg-3 py-3 py-3">
                     <div class="card">
                         <img src="https://picsum.photos/200" class="card-img-top" alt="...">
@@ -101,8 +101,8 @@
                         </div>
                     </div>
                 </div>
-            <?php endforeach; ?>
-        </div> -->
+            <!-- <?php endforeach; ?> -->
+        </div> 
     </div>
 </body>
 </html>
