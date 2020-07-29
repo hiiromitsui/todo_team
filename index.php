@@ -61,8 +61,9 @@
                             </p>
 
                              <div class> 
-                                 <h4>title</h4>
-                                 <p>contents</p>
+                                 <h2>Title</h2>
+                                 <h4><p>Contents</p></h4><br>
+                                 <h6><p>Deadline 2020-07-29</p></h6>
         
                              
                              </div class>
