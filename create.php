@@ -10,7 +10,7 @@
     <div class="container-fulid">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-dark bg-dark">
+                     <nav class="navbar navbar-dark bg-dark">
                     <a href="index.php" class="navbar-brand">Todo</a>
                 </nav>
             </div>
@@ -21,6 +21,10 @@
                     <div class="form-group">
                         <label for="title">Title</label>
                         <input type="text" class="form-control" name="title" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">Deadline</label>
+                        <input type="text" class="form-control" name="deadline" id="deadline">
                     </div>
                     <div class="form-group">
                         <label for="contents">Contents</label>
