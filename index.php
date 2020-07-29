@@ -62,8 +62,8 @@
 
                              <div class> 
                                  <h2>Title</h2>
-                                 <h4><p>Contents</p></h4><br>
-                                 <h6><p>Deadline 2020-07-29</p></h6>
+                                 <h5><p>Contents</p></h5><br>
+                                 <p>Deadline 2020-07-29</p>
         
                              
                              </div class>
