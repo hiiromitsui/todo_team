@@ -45,6 +45,10 @@
                             <input type="file" class="custom-file-input" id="image">
                             <label class="custom-file-label" for="image">Choose file</label>
                         </div>
+                        <div class="form-group">
+                        <label for="deadline">Deadline</label>
+                        <input type="datetime-local" class="form-control" name="deadline" id="deadline">
+                    </div>
                     </div>
                     <input type="hidden" name="id" value="<?= h($task['id']); ?>">
                     <div class="d-flex justify-content-end">
