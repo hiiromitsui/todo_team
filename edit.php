@@ -36,15 +36,15 @@
                         <label for="title">Title</label>
                         <input type="text" class="form-control" name="title" id="title" value="<?= $task['title']; ?>">
                     </div>
+                    </div>
+                        <div class="form-group">
+                        <label for="deadline">Deadline</label>
+                        <input type="datetime-local" class="form-control" name="deadline" id="deadline">
+                    </div>
                     <div class="form-group">
                         <label for="contents">Contents</label>
                         <textarea class="form-control" name="contents" id="contents" cols="30" rows="10"><?= $task['contents'] ?></textarea>
-                    </div>
-                    <div class="form-group">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="image">
-                            <label class="custom-file-label" for="image">Choose file</label>
-                        </div>
+                    
                     </div>
                     <input type="hidden" name="id" value="<?= h($task['id']); ?>">
                     <div class="d-flex justify-content-end">
