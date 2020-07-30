@@ -91,13 +91,13 @@ if(isset($_SESSION['user'])){
                             <h2 class="card-title">
                             <?= h($task["title"]); ?></h2>
 
-                           <h5> <p class="card-text">
+                           <h4> <p class="card-text">
                                 <?= h($task["contents"]); ?>
-                            </p><h/5>
+                            </p><h/4>
 
-                            <p class="card-deadline">
+                            <h6><p class="card-deadline">
                                 <?= h($task["deadline"]); ?>
-                            </p> 
+                            </p> </h6>
 
 
                                  <!-- <h2>Title</h2>
