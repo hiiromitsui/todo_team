@@ -13,7 +13,7 @@ class Task extends Model
         // このクラスのインスタンスの
         // db_managerプロパティの
         // DbManagerクラスのインスタンス
-        // dbhプロパティの
+        // dbhプロパティのSS
         // PDOのインスタンス
         // prepareメソッドを実行
         // INSERT INTO (カラム名, ,) VALUES (値, 値, 値,)
@@ -24,7 +24,7 @@ class Task extends Model
     public function update($data)
     {
         // データの更新
-        $stmt = $this->db_manager->dbh->prepare('UPDATE ' . $this->table . ' SET title = ?, contents = ? WHERE id = ? SET deadline = ?');
+        $stmt = $this->db_manager->dbh->prepare('UPDATE ' . $this->table . ' SET title = ?, contents = ? WHERE id = ? WHEN deadline = ?');
         $stmt->execute($data);
     }
 
