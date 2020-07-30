@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="row mt-4 px-4">
-            <div class="col-12">
+            <div class="col-2">
                 <form action="update.php" method="post">
                     <div class="form-group">
                         <label for="title">Title</label>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="form-group">
                         <label for="contents">Contents</label>
-                        <textarea class="form-control" name="contents" id="contents" cols="30" rows="10"><?= $task['contents'] ?></textarea>
+                        <textarea class="form-control" name="contents" id="contents" cols="200" rows="10"><?= $task['contents'] ?></textarea>
                     
                     </div>
                     <input type="hidden" name="id" value="<?= h($task['id']); ?>">
