@@ -9,7 +9,7 @@ class DbManager
         //DBに接続
         $host = "localhost";
         // $dbname = "データベース名";
-        $dbname = "tasks";
+        $dbname = "todo_team";
         $charset = "utf8mb4";
         $user = 'root';
         $password = '';
