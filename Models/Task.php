@@ -24,7 +24,7 @@ class Task extends Model
     public function update($data)
     {
         // データの更新
-        $stmt = $this->db_manager->dbh->prepare('UPDATE ' . $this->table . ' SET title = ?, contents = ? WHERE id = ? TIME deadline = ?');
+        $stmt = $this->db_manager->dbh->prepare('UPDATE ' . $this->table . ' SET title = ?, deadline = ?, contents = ? WHERE id = ?');
         $stmt->execute($data);
     }
 
