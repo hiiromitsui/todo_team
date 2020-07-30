@@ -17,7 +17,7 @@ class Task extends Model
         // PDOのインスタンス
         // prepareメソッドを実行
         // INSERT INTO (カラム名, ,) VALUES (値, 値, 値,)
-        $stmt = $this->db_manager->dbh->prepare('INSERT INTO ' . $this->table . ' (title, contents, created, deadline) VALUES (?, ?, ?)');
+        $stmt = $this->db_manager->dbh->prepare('INSERT INTO ' . $this->table . ' (title, contents, created, deadline) VALUES (?, ?, ?, ?)');
         $stmt->execute($data);
     }
 
