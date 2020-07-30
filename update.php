@@ -5,13 +5,14 @@ require_once('Models/Task.php');
 
 // データの受け取り
 $title = $_POST['title'];
+$deadline = $_POST['deadline'];
 $contents = $_POST['contents'];
 $id = $_POST['id'];
-$deadline = $_POST['deadline'];
+
 
 // DBへのデータ保存
 $task = new Task();
-$task->update([$title, $contents, $id, $deadline]);
+$task->update([$title, $deadline, $contents, $id]);
 
 // リダイレクト
 header('location:index.php');
