@@ -9,6 +9,8 @@
     // DBへのデータ保存
     $task = (new Task())->findById($id);
     // ↑ インスタンス化して、その中のメソッドを実行するコードを一行で書いた形
+    $deadline = $task['deadline'];
+    $deadline[10] = 'T';
 
 ?>
 <!DOCTYPE html>
@@ -30,7 +32,7 @@
             </div>
         </div>
         <div class="row mt-4 px-4">
-            <div class="col-2">
+            <div class="col-12">
                 <form action="update.php" method="post">
                     <div class="form-group">
                         <label for="title">Title</label>
@@ -39,7 +41,7 @@
                     </div>
                         <div class="form-group">
                         <label for="deadline">Deadline</label>
-                        <input type="datetime-local" class="form-control" name="deadline" id="deadline">
+                        <input type="datetime-local" class="form-control" name="deadline" id="deadline" value="<?= $deadline ?>">
                     </div>
                     <div class="form-group">
                         <label for="contents">Contents</label>

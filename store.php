@@ -6,6 +6,7 @@ $title=$_POST['title'];
 $contents=$_POST['contents'];
 $currnetTime=date("Y/m/d H:i:s");
 $deadline=$_POST['deadline'];
+// echo $deadline;
 
 $task= new Task();
 $task->create([$title,$contents,$currnetTime,$deadline]);

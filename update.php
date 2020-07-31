@@ -9,7 +9,7 @@ $deadline = $_POST['deadline'];
 $contents = $_POST['contents'];
 $id = $_POST['id'];
 
-
+date("Y/m/d H:i:s",strtotime($deadline));
 // DBへのデータ保存
 $task = new Task();
 $task->update([$title, $deadline, $contents, $id]);
