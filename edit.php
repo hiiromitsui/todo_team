@@ -6,6 +6,7 @@
     // データの受け取り
     $id = $_GET['id'];
 
+    // ↑＄id をしたのFindByに代入してる
     // DBへのデータ保存
     $task = (new Task())->findById($id);
     // ↑ インスタンス化して、その中のメソッドを実行するコードを一行で書いた形
@@ -30,20 +31,20 @@
             </div>
         </div>
         <div class="row mt-4 px-4">
-            <div class="col-2">
+            <div class="col-12">
                 <form action="update.php" method="post">
                     <div class="form-group">
                         <label for="title">Title</label>
                         <input type="text" class="form-control" name="title" id="title" value="<?= $task['title']; ?>">
                     </div>
-                    </div>
-                        <div class="form-group">
+                    
+                    <div class="form-group">
                         <label for="deadline">Deadline</label>
                         <input type="datetime-local" class="form-control" name="deadline" id="deadline">
                     </div>
                     <div class="form-group">
                         <label for="contents">Contents</label>
-                        <textarea class="form-control" name="contents" id="contents" cols="200" rows="10"><?= $task['contents'] ?></textarea>
+                        <textarea class="form-control" name="contents" id="contents" cols="30" rows="10"><?= $task['contents'] ?></textarea>
                     
                     </div>
                     <input type="hidden" name="id" value="<?= h($task['id']); ?>">
@@ -56,3 +57,5 @@
     </div>
 </body>
 </html>
+ 
+ 
