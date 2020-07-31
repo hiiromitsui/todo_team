@@ -1,3 +1,9 @@
+<?php
+date_default_timezone_set('Asia/Tokyo');
+$now = date("Y-m-d H:i");
+$now[10] = 'T';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +30,7 @@
                     </div>
                     <div class="form-group">
                         <label for="deadline">Deadline</label>
-                        <input type="datetime-local" class="form-control" name="deadline" id="deadline">
+                        <input type="datetime-local" class="form-control" name="deadline" id="deadline" value="<?= $now ?>">
                     </div>
                     <div class="form-group">
                         <label for="contents">Contents</label>
