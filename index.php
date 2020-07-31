@@ -11,8 +11,17 @@ if(isset($_SESSION['user'])){
  }
 
 //  検索
- $task = new Task();
- $tasks = $task->getAll();
+$task = new Task();
+
+
+if(isset($_GET['title'])) {
+    $title = $_GET['title'];
+    // echo $title;
+    $tasks = $task->findByTitle(["%$title%"]);
+} else {
+    $tasks = $task->getAll();
+}
+
 ?>
 
 
